@@ -12,7 +12,7 @@ export default function Distort() {
   const callDistort = () => {
     const newPos = window.scrollY;
     const diff = newPos - currentPos;
-    const speed = diff * 0.25;
+    const speed = diff * 0.35;
 
     cardsRef.current.style.transform = `skewY(${speed}deg)`;
     currentPos = newPos;
