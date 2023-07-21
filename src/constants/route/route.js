@@ -1,6 +1,10 @@
 export const routes = [
   {
-    title: "Learn page distortion",
+    title: "Page distortion",
     path: "/distort",
+  },
+  {
+    title: "Animated cursor",
+    path: "/animated-cursor",
   },
 ];

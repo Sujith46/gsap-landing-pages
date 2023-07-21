@@ -12,3 +12,8 @@ body {
   color: var(--foreground-rgb);
   background: #181818;
 }
+
+
+.hover-this:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(8);
+}
