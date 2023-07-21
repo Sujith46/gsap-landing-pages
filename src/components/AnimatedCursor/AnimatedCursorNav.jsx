@@ -1,7 +1,14 @@
 "use client";
 
+import { Cormorant_Garamond } from "next/font/google";
 import Link from "next/link";
 import { useEffect } from "react";
+
+const cormorantGaramond  = Cormorant_Garamond({
+  weight: ["500"],
+  subsets: ["latin"],
+  style: ["italic"]
+});
 
 export const AnimatedCursorNav = () => {
   const links = ["Home", "Studio", "Our Story", "Contact"];
@@ -58,7 +65,7 @@ export const AnimatedCursorNav = () => {
           key={index}
           className="hover-this transition-all duration-300 ease-in cursor-none"
         >
-          <span className=" text-5xl inline-block pointer-events-none transform duration-[0.1s] ease-linear">
+          <span className={`${cormorantGaramond.className} text-5xl inline-block pointer-events-none transform duration-[0.1s] ease-linear`}>
             {menu}
           </span>
         </Link>
