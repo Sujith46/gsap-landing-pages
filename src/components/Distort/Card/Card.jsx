@@ -11,7 +11,7 @@ export const Card = ({ image, heading, description }) => {
   return (
     <div className="card mb-16">
       {image ? (
-        <Image src={image} alt="car-image" width={700} height={700} />
+        <Image src={image} alt="car-image" width="100%"/>
       ) : null}
       <h1 className={`${space_grotesk_bold.className} text-5xl mt-6 mb-4`}>
         {heading}

@@ -2,6 +2,7 @@
 
 import { Card } from "@/components/Distort/Card/Card";
 import { Container } from "@/components/Distort/Container/Container";
+import { BackToHome } from "@/components/common/backToHome/BackToHome";
 import { cars } from "@/constants/distort/cars";
 import { useEffect, useRef } from "react";
 
@@ -25,8 +26,12 @@ export default function Distort() {
   return (
     <main className="w-screen h-screen">
       <Container>
+        <div className="info-content flex items-center justify-between">
+          <h1 className="py-8 text-gray-400">Scroll to see distortion</h1>
+          <BackToHome />
+        </div>
         <div
-          className="cars-container py-16 transition transform duration-200 ease-in will-change-transform"
+          className="cars-container pb-8 transform duration-300 ease-in-out will-change-transform"
           ref={cardsRef}
         >
           {cars?.sports_cars?.map((car, index) => (
